@@ -70,40 +70,16 @@ class Product implements Entity
     /**
      * @param ProductId $productId
      * @param $name
-     * @param $image
-     * @param $color
-     * @param $height
-     * @param $width
-     * @param $model
-     * @param $mpn
-     * @param $releaseDate
      * @param $sku
-     * @param $weight
      */
     public function __construct(
         ProductId $productId,
         $name,
-        $image,
-        $color,
-        $height,
-        $width,
-        $model,
-        $mpn,
-        \DateTime $releaseDate,
-        $sku,
-        $weight
+        $sku
     ) {
         $this->productId   = $productId;
         $this->name        = (string) $name;
-        $this->image       = (string) $image;
-        $this->color       = (string) $color;
-        $this->height      = (string) $height;
-        $this->width       = (string) $width;
-        $this->model       = (string) $model;
-        $this->mpn         = (string) $mpn;
-        $this->releaseDate = $releaseDate;
         $this->sku         = (string) $sku;
-        $this->weight      = (string) $weight;
     }
 
     /**
